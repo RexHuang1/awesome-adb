@@ -793,6 +793,19 @@ adb shell am broadcast -a android.intent.action.BOOT_COMPLETED -n org.mazhuang.b
 
 *（以上广播均可使用 adb 触发）*
 
+### 查看content-provider
+命令：
+
+```sh
+adb shell content delete --uri <contentprovider-uri>
+```
+```sh
+adb shell content query --uri <contentprovider-uri>
+```
+```sh
+adb shell content insert --uri <contentprovider-uri>
+```
+
 ### 强制停止应用
 
 命令：
